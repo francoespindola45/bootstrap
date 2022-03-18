@@ -1,0 +1,199 @@
+/*imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,300;1,100&display=swap' );
+
+/*variables*/
+
+:root {
+    --principal: #B9F;
+    --secundario: #141E27;
+    --tercero: #F0F69F;
+    --cuarto: #EA907A; 
+    --font-principal: 'Josefin+Sans', sans-serif;
+    --text-lg: 2.4em;
+    --text-md: 2em;
+    --text-sm: 0.5em;
+}
+/*normalize*/
+
+*,
+*::before
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos globales*/
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-principal);
+    color: var(--secundario);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: var(--text-md);
+    color: var(--secundario);
+    display: inline-block;
+}
+
+/*helper*/
+
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.grid-container{
+    display: grid;
+    background-color: var(--tercero);
+    height: auto;
+    width: auto;
+    grid-template-columns: auto auto;
+}
+
+.info{
+    display: grid;
+    background-color: var(--cuarto);
+    height: auto;
+}
+
+/*header y navbar*/
+
+header{
+    background-color:var(--principal)
+}
+
+header .navbar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
+}
+
+header .logo{
+    width: 10rem;
+    height: 10rem;
+    flex-basis: 20%;
+}
+
+header .menu{
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+.menu .menu__item{
+    position: relative;
+}
+
+.menu .menu__item .menu__link{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.navbar .sub-menu{
+    display: none;
+    position: absolute;
+    right: 15px;
+}
+
+.navbar .menu .menu__item:hover .sub-menu{
+    display: block;
+}
+
+.menu__item .sub-menu .sub-menu__link{
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    transition: all 0.3s ease-in-out;
+}
+.menu__item .sub-menu .sub-menu__link:hover{
+    background-color: var(--secundario);
+    color: var(--principal);
+}
+
+main img{
+    width: 100%;
+    height: 400px;
+    min-width: 10vh;
+    min-height: 10vh;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Josefin+Sans', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+/*informacion*/
+
+p{
+    font-size: var(--text-md);
+    padding: 1.5rem;
+    display: inline-block;
+    text-align:center;
+}
+
+div .cachi{
+    width: 20rem;
+    height: 20rem;
+}
+
+div .tequila{
+    width: 20rem;
+    height: 20rem;
+}
+
+div .wisky{
+    width: 20rem;
+    height: 20rem;
+}
+
+div .quienes-somos{
+    width: 25rem;
+    height: 25rem;
+}
+
+div .que-hacemos{
+    width: 25rem;
+    height: 25rem;
+}
+
+#footer{
+    display: grid;
+    background-color: black;
+    position: relative;
+    padding: 0.5rem;
+    grid-template-columns: 150px 50px;
+    justify-content: center;
+}
+
+a img {
+    width: 100%;
+
+}
+
+#footer h3{
+    color: white;
+    text-align: center;
+    padding: 0%;
+}

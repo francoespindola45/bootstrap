@@ -198,6 +198,6 @@ a img {
     padding: 0%;
 }
 
-.d-block {
-    height: 80rem;
+body{
+    background-color: var(--tercero);
 }
